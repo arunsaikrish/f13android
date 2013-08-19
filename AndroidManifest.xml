@@ -22,6 +22,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.example.f13.EventList"
+            android:label="@string/title_activity_event_list" >
+        </activity>
+        <activity
+            android:name="com.example.f13.EventDescription"
+            android:label="@string/title_activity_event_description" >
+        </activity>
     </application>
 
 </manifest>

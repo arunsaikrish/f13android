@@ -1,5 +1,6 @@
 package com.example.f13;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -54,10 +55,10 @@ public class FirstFragment extends Fragment {
 		    public void onClick(View v) {
 		        // here you set what you want to do when user clicks your button,
 		        // e.g. launch a new activity
-		    	mButton.setText("finally!");
-		    	System.out.println("hola");
-		    	
-		    	
+		    	/*mButton.setText("finally!");
+		    	System.out.println("hola");*/
+		    	Intent i = new Intent(getActivity(), EventList.class);
+		    	startActivity(i);
 		    }
 		});
 		

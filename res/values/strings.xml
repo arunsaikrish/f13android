@@ -4,5 +4,8 @@
     <string name="app_name">F\'13</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    <string name="title_activity_event_list">EventList</string>
+    <string name="listofevents">List Of Events</string>
+    <string name="title_activity_event_description">EventDescription</string>
 
 </resources>
