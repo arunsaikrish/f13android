@@ -1,20 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<android.support.v4.view.ViewPager
-xmlns:android="http://schemas.android.com/apk/res/android"
-android:layout_width="fill_parent"
-android:layout_height="fill_parent"
-android:id="@+id/viewpager">
+    <HorizontalScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+    	xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/horizontalScrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:scrollY="200dp" 
+        android:scrollbars="none">
 
-    <fragment android:name="com.example.f13.FirstFragment"
-          android:id="@+id/selectionFragment"
-          android:layout_width="match_parent"
-          android:layout_height="match_parent" />
-    <fragment android:name="com.example.f13.SecondFragment"
-          android:id="@+id/splashFragment"
-          android:layout_width="match_parent"
-          android:layout_height="match_parent" />
+	<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="match_parent" 
+        android:background="@drawable/sitelayout_2"
+        >
 
-</android.support.v4.view.ViewPager>
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="200dp"
+                    android:layout_height="150dp"
+                    android:layout_x="30dp"
+                    android:layout_y="30dp"
+                    android:background="#00000000"
+                    android:text=""
+                    android:textColor="#FFFFFF" />
 
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="200dp"
+                    android:layout_height="150dp"
+                    android:background="#00000000"
+                    android:text=""
+                    android:textColor="#FFFFFF" />
 
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="200dp"
+                    android:layout_height="150dp"
+                    android:background="#00000000"
+                    android:text=""
+                    android:textColor="#FFFFFF" />
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="200dp"
+                    android:layout_height="150dp"                   
+                    android:background="#00000000"
+                    android:text=""
+                    android:textColor="#FFFFFF" />
+
+              <Button
+                    android:id="@+id/button5"
+                    android:layout_width="200dp"
+                    android:layout_height="150dp"                   
+                    android:background="#00000000"
+                    android:text=""
+                    android:textColor="#FFFFFF" />            
+
+            </RelativeLayout>
+    </HorizontalScrollView>

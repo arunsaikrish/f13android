@@ -43,10 +43,10 @@ int h,w;
 		b2=(Button)findViewById(R.id.button2);
 		b3=(Button)findViewById(R.id.button3);
 		b4=(Button)findViewById(R.id.button4);
-		b5=(Button)findViewById(R.id.button5);
+		/*b5=(Button)findViewById(R.id.button5);
 		b6=(Button)findViewById(R.id.button6);
 		b7=(Button)findViewById(R.id.button7);
-		b8=(Button)findViewById(R.id.button8);
+		b8=(Button)findViewById(R.id.button8);*/
 		
 		/*StateListDrawable bg=(StateListDrawable)b.getBackground();
 		Drawable curr=bg.getCurrent();
@@ -61,10 +61,10 @@ int h,w;
 		b3.setOnClickListener(this);
 		b4.setOnClickListener(this);
 
-		b5.setOnClickListener(this);
+		/*b5.setOnClickListener(this);
 		b6.setOnClickListener(this);
 		b7.setOnClickListener(this);
-		b8.setOnClickListener(this);
+		b8.setOnClickListener(this);*/
 		
 		
 	}
@@ -116,8 +116,7 @@ int h,w;
 			
 	}
 
-	@SuppressWarnings("deprecation")
-	@Override
+	/*@Override
 	public void onWindowFocusChanged(boolean hasFocus) {
 		// TODO Auto-generated method stub
 		super.onWindowFocusChanged(hasFocus);
@@ -159,6 +158,6 @@ int h,w;
 		//Log.d("w-h",width+" "+height);
 		 
 		Log.d("w-h",w+" "+h);
-	}
+	}*/
 
 }

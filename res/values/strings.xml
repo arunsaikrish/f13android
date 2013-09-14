@@ -7,5 +7,7 @@
     <string name="title_activity_event_list">EventList</string>
     <string name="listofevents">List Of Events</string>
     <string name="title_activity_event_description">EventDescription</string>
+    <string name="title_activity_info_display">InfoDisplay</string>
+    <string name="title_activity_info_desc">InfoDesc</string>
 
 </resources>

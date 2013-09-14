@@ -6,16 +6,22 @@ import android.app.ListActivity;
 import android.content.Intent;
 import android.view.Menu;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
 public class EventList extends ListActivity {
 
-	String [] events= {"Event 1","Event 2","Event 3","Event 4","Event 5","Event 6","Event 7","Event 8","Event 9","Event 10"};
+	String [] events= new String[8];
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		// full screen
+		requestWindowFeature(Window.FEATURE_NO_TITLE);
+		getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+				WindowManager.LayoutParams.FLAG_FULLSCREEN);
 		setContentView(R.layout.activity_event_list);
 		ArrayAdapter<String> events_list= new ArrayAdapter<String>(EventList.this,R.layout.eventname,events);
 		setListAdapter(events_list);
@@ -25,7 +31,7 @@ public class EventList extends ListActivity {
 	{
 		String eventname = new String(((TextView)v.findViewById(R.id.eventname)).getText().toString());
 		Intent i= new Intent(this, EventDescription.class);
-		i.putExtra("title", eventname);
+		i.putExtra("title", "•  "+eventname);
 		startActivity(i);
 	}
 

@@ -8,6 +8,8 @@
         android:minSdkVersion="8"
         android:targetSdkVersion="17" />
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -29,6 +31,30 @@
         <activity
             android:name="com.example.f13.EventDescription"
             android:label="@string/title_activity_event_description" >
+        </activity>
+        <activity
+            android:name="com.example.f13.InfoDisplay"
+            android:label="@string/title_activity_info_display"
+            android:parentActivityName="MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.f13.InfoDesc"
+            android:label="@string/title_activity_info_desc"
+            android:parentActivityName="InfoDisplay" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="InfoDisplay" />
+        </activity>
+        <activity
+            android:name="com.example.f13.Contacts"
+            android:parentActivityName="InfoDisplay" >
+        </activity>
+        <activity
+            android:name="com.example.f13.Workshops"
+            android:parentActivityName="InfoDisplay" >
         </activity>
     </application>
 
